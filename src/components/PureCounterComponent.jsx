@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 
 class PureCounterComponent extends Component {
   constructor(props) {
