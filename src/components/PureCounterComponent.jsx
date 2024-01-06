@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 
-class PureCounterComponent extends Component {
+class PureCounterComponent extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -12,12 +12,6 @@ class PureCounterComponent extends Component {
   increment = () => {
     this.setState((prevState) => ({
       count: prevState.count + 1,
-    }));
-  };
-
-  decrement = () => {
-    this.setState((prevState) => ({
-      count: prevState.count - 1,
     }));
   };
 

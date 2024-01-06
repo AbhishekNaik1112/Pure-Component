@@ -15,12 +15,6 @@ class SimpleCounterComponent extends Component {
     }));
   };
 
-  decrement = () => {
-    this.setState((prevState) => ({
-      count: prevState.count - 1,
-    }));
-  };
-
   toggleIncrement = () => {
     this.setState((prevState) => ({
       isIncrementAllowed: !prevState.isIncrementAllowed,
